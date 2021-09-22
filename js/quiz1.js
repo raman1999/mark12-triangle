@@ -17,22 +17,28 @@ const correctAns = [
 ]
 let score = 0
 
+
 function clickEventHandler(event) {
   event.preventDefault()
   const quesData = new FormData(quizForm)
   let index = 0
+  console.log(quesData)
   for (let each of quesData) {
+    console.log(each)
     if (each[1] == correctAns[index]) {
       quesDivs[index].style.backgroundColor = 'lightgreen'
       score++
+      
     } else {
       quesDivs[index].style.backgroundColor = 'pink'
     }
 
     index++
   }
-  scoreDiv.textContent = 'Score: ' + score
+  scoreDiv.textContent = 'Score: ' + score;
   submitQuiz.style.display = 'none'
 }
 
 quizForm.addEventListener('submit', clickEventHandler)
+
+

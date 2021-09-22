@@ -1,6 +1,6 @@
-var angleOneInput = document.querySelector('#angle1')
-var angleTwoInput = document.querySelector('#angle2')
-var angleThreeInput = document.querySelector('#angle3')
+var angleOne = document.querySelector('#angle1')
+var angleTwo = document.querySelector('#angle2')
+var angleThree = document.querySelector('#angle3')
 var checkAngleSum = document.querySelector('#check-angle-sum')
 var angleSum = document.querySelector('#angle-sum')
 var resultText = document.querySelector('#result-text-for-angle-sum')
@@ -8,25 +8,23 @@ var resultText = document.querySelector('#result-text-for-angle-sum')
 function sumOfAngles(event) {
   event.preventDefault()
 
-  console.log(angleOneInput.value, typeof(angleOneInput.value))
-  console.log(angleTwoInput.value, typeof(angleTwoInput.value))
-  console.log(angleThreeInput.value, typeof(angleThreeInput.value))
+  
 
-  if (!angleOneInput.value || !angleTwoInput.value || !angleThreeInput.value) {
+  if (!angleOne.value || !angleTwo.value || !angleThree.value) {
       alert("Angle field can't be empty.\nPlease enter valid angles.")
       return
   }
 
-  var angleOne = parseFloat(angleOneInput.value)
-  var angleTwo = parseFloat(angleTwoInput.value)
-  var angleThree = parseFloat(angleThreeInput.value)
+  var angle1= parseFloat(angleOne.value)
+  var angle2 = parseFloat(angleTwo.value)
+  var angle3 = parseFloat(angleThree.value)
   
-  if ((angleOne === 0) || (angleTwo === 0) || (angleThree === 0)) {
+  if ((angle1 === 0) || (angle2 === 0) || (angle3 === 0)) {
       alert("Angle of a triangle can't be ZERO! \n If it's zero, it'll be a forming a straight line")
       return
   }
 
-  var sum = angleOne + angleTwo + angleThree
+  var sum = angle1 + angle2 + angle3
   console.log(sum)
   angleSum.textContent = 'Sum of the angles is: ' + sum
   
@@ -39,3 +37,6 @@ function sumOfAngles(event) {
 }
 
 checkAngleSum.addEventListener('click', sumOfAngles)
+
+
+

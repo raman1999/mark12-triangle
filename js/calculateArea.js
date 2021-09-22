@@ -8,12 +8,10 @@ var resultText = document.querySelector('#result-text')
 function areaOfTriangle(event) {
     event.preventDefault()
 
-    // console.log(sideOneInput.value, typeof(sideOneInput.value))
-    // console.log(sideTwoInput.value, typeof(sideTwoInput.value))
-    // console.log(sideThreeInput.value, typeof(sideThreeInput.value))
+    
 
     if (!sideOneInput.value || !sideTwoInput.value || !sideThreeInput.value) {
-        alert("Fields can't be left empty! All the inputs are to be filled properly :)")
+        alert("Fields can't be left empty! All the inputs are to be filled properly ")
     }
 
     var sideOne = parseFloat(sideOneInput.value)
@@ -29,18 +27,7 @@ function areaOfTriangle(event) {
         var s = (sideOne + sideTwo + sideThree) / 2
         var area = (Math.sqrt(s * (s - sideOne) * (s - sideTwo) * (s - sideThree))).toFixed(2)
     
-        // console.log(
-        //   'Area of the triangle given sides ' +
-        //     side1 +
-        //     ' units, ' +
-        //     side2 +
-        //     ' units, ' +
-        //     side3 +
-        //     ' units = ' +
-        //     area +
-        //     ' sq.units'
-        // )
-        // console.log(area)
+        
 
         resultText.textContent = 'Area of the triangle given sides ' +
         sideOne +
@@ -58,3 +45,5 @@ function areaOfTriangle(event) {
 }
 
 calculateArea.addEventListener('click', areaOfTriangle)
+
+
