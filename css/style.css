@@ -70,6 +70,7 @@ h1 {
     cursor: pointer;
 }
 
+
 .link-back {
     display: block;
     margin-left: auto;
@@ -87,6 +88,18 @@ h1 {
     height:3vh;
 }
 
+
+.mainpage-style {
+    margin: auto;
+    width: 60vw;
+    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: -4px 3px 19px 2px var(--quaternary-color);
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+}
+
 .form-style {
     display: flex;
     flex-direction: column;
@@ -102,7 +115,7 @@ h1 {
 .input-style {
     display: block;
     margin: auto;
-    /* width: 55%; */
+    
     max-width: 30vw;
     margin-top: 0.5rem;
     padding: 0.3125rem 0.3125rem;
@@ -133,6 +146,7 @@ input::-webkit-inner-spin-button {
 }
 
 .checkBtn-style {
+
     background-color: var(--secondary-color);
     color: white;
     border: none;
@@ -148,15 +162,9 @@ input::-webkit-inner-spin-button {
     box-shadow: 5px 5px 20px rgb(161, 161, 161);
 }
 
-.mainpage-style {
-    margin: auto;
-    width: 60vw;
-    text-align: center;
-    background-color: black;
-    border-radius: 20px;
-    box-shadow: -4px 3px 19px 2px var(--quaternary-color);
-    padding-top: 1vh;
-    padding-bottom: 2vh;
+#angle-sum
+{
+    font-size:1.2rem;
 }
 
 .result-style {
@@ -165,9 +173,7 @@ input::-webkit-inner-spin-button {
     font-weight: 550;
 }
 
- label.question {
-    display: block;
-}
+
 
 .radio input {
     cursor: pointer;
