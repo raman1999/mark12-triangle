@@ -15,8 +15,8 @@ function calculateHypotenuse(event) {
         return
     }
 
-    legOne = parseFloat(legOneInput.value)
-    legTwo = parseFloat(legTwoInput.value)
+    var legOne = parseFloat(legOneInput.value)
+     var legTwo = parseFloat(legTwoInput.value)
 
     // console.log(legOne, typeof(legOne))
     // console.log(legTwo, typeof(legTwo))
